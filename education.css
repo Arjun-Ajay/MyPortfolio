@@ -1,0 +1,115 @@
+:root{
+    --clr1: white;
+    --clr2: rgb(197, 192, 192);
+    --gold: #ffcc00;
+    --yellow: #ffeb3b;
+    --grad0: black;
+    --grad40: #241c00;
+    --grad100: #332a00;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%; /* Eqeuates to 10px, Useful when dealing with rem sizes */
+}
+
+body{
+    width:100%;
+    height:100vh;
+    color: var(--clr1);
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(
+        180deg, var(--grad0) 0%, var(--grad40) 40%, var(--grad100) 100%
+    );
+    color: white;
+}
+
+header{
+    width: 100%;
+    padding: 5rem 7%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+    position: sticky;
+    top:0;
+}
+
+.logo{
+    color: var(--gold);
+    font-size: 3.5rem;
+    display: flex;
+}
+.logo img{
+    width:4rem;
+}
+
+.navigation{
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+}
+
+#activeTab{
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+}
+.navigation a{
+    color: var(--clr1);
+    font-size: 2.2rem;
+    transition: 0.1s;
+    font-weight: 600;
+}
+.navigation a:hover{
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+}
+
+#main_heading{
+    margin-left: 7%;
+    font-size: 7.4rem;
+    font-weight: 500;
+}
+#main_heading img{
+    width:6rem;
+}
+
+.edu{
+    align-items: center;
+    min-width: 100vw;
+    padding: 7rem 9%;
+}
+.edu_main{
+    display: flex;
+    justify-content: space-between;
+}
+.edu_main button{
+    padding: 1rem 1rem;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    background-color: transparent;
+    border-radius: 4rem;
+    letter-spacing: 0.1rem;
+}
+.edu h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.edu H3{
+    font-size: 1.8rem;
+    color: var(--gold);
+    font-weight: 425;
+}
+.edu p{
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    color: var(--clr2);
+    font-weight: 300;
+}
