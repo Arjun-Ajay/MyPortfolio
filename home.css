@@ -2,6 +2,9 @@
     --clr1: white;
     --gold: #ffcc00;
     --yellow: #ffeb3b;
+    --grad0: black;
+    --grad40: #241c00;
+    --grad100: #332a00;
 }
 
 *{
@@ -10,7 +13,6 @@
     box-sizing: border-box;
     border: none;
     text-decoration: none;
-    font-family: 'poppins','sans-serif';
 }
 
 html{
@@ -20,8 +22,12 @@ html{
 body{
     width:100%;
     height:100vh;
-    background-color: black;
     color: var(--clr1);
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(
+        180deg, var(--grad0) 0%, var(--grad40) 40%, var(--grad100) 100%
+    );
+    color: white;
 }
 
 header{
@@ -52,7 +58,7 @@ header{
     color: var(--clr1);
     font-size: 2.2rem;
     transition: 0.3s;
-
+    font-weight: 600;
 }
 .navigation a:hover, .navigation a:active{
     color: var(--gold);
@@ -78,7 +84,8 @@ header{
     line-height: 1.5;
 }
 .home-content h1{
-    font-size:4.5rem
+    font-size:4.5rem;
+    font-weight:600;
 }
 span{
     color: var(--gold);
@@ -86,9 +93,11 @@ span{
 }
 .home-content h3{
     font-size: 4.5rem;
+    font-weight: 500;
 }
 .home-content p{
     font-size:2.5rem;
+    font-weight: 400;
 }
 
 .socials a{
