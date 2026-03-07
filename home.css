@@ -44,8 +44,10 @@ header{
 .logo{
     color: var(--gold);
     font-size: 3.5rem;
-    cursor: pointer;
-    transition: 0.3s;
+    display: flex;
+}
+.logo img{
+    width:4rem;
 }
 
 .navigation{
@@ -54,13 +56,17 @@ header{
     gap: 4rem;
 }
 
+#activeTab{
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+}
 .navigation a{
     color: var(--clr1);
     font-size: 2.2rem;
-    transition: 0.3s;
+    transition: 0.1s;
     font-weight: 600;
 }
-.navigation a:hover, .navigation a:active{
+.navigation a:hover{
     color: var(--gold);
     border-bottom: 2px solid var(--gold);
 }
@@ -96,7 +102,8 @@ span{
     font-weight: 500;
 }
 .home-content p{
-    font-size:2.5rem;
+    margin-top:1rem;
+    font-size:2rem;
     font-weight: 400;
 }
 
