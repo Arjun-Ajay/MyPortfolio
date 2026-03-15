@@ -1,0 +1,96 @@
+:root{
+    --clr1: white;
+    --gold: #ffcc00;
+    --yellow: #ffeb3b;
+    --grad0: black;
+    --grad40: #241c00;
+    --grad100: #332a00;
+}
+
+#main_heading{
+    margin-left: 7%;
+    font-size: 7.4rem;
+    font-weight: 500;
+}
+#main_heading img{
+    width:6rem;
+}
+
+.contact-container1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 7%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+p{  
+    margin-top:1rem;
+    font-size:1.9rem;
+    font-weight: 400;
+}
+span{
+    font-size: 2.2rem;
+    color: var(--yellow);
+    font-weight: 450;
+}
+span:hover{
+    border-bottom: 1px dotted var(--yellow);
+}
+
+.contact-container2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+fieldset{
+    height: 40rem;
+    width: 60rem;
+    border: 2px solid var(--gold);
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 2rem;;
+}
+
+label{
+    font-size: 2rem;
+}
+
+input[type="text"],
+input[type="email"]{
+    width:100%;
+    height:3rem;
+    border: 1px solid var(--grad0);
+    border-radius: 3px;
+}
+
+.button{
+    margin-top:0.5rem;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="submit"]{
+    border:2px solid var(--gold);
+    background-color: var(--grad0);
+    color: var(--gold);
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 4rem;
+    letter-spacing: 0.7rem;
+    font-weight: 500;
+}
+input[type="submit"]:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    box-shadow: 0 0 10px var(--yellow);
+}
+textarea{
+    width:100%;
+    height:10rem;
+    margin-top:0.5rem;
+    border-radius: 3px;
+}
