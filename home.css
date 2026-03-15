@@ -57,7 +57,7 @@ span{
     border-radius: 40%;
 }
 
-button{
+a.button{
     margin-top: 2rem;
     padding: 1rem 3rem;
     color: var(--gold);
@@ -65,9 +65,10 @@ button{
     border-radius: 4rem;
     border-color: var(--gold);
     background-color: black;
-    letter-spacing: 1rem;
+    letter-spacing: 0.7rem;
+    font-size:1.5rem;
     font-weight: 500;
 }
-button:hover{
-    transform: scale(1.1)
+a.button:hover{
+    box-shadow: 0 0 10px var(--yellow);
 }
