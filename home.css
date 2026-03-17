@@ -1,5 +1,6 @@
 :root{
     --clr1: white;
+    --clr2: grey;
     --gold: #ffcc00;
     --yellow: #ffeb3b;
     --grad0: black;
@@ -20,6 +21,7 @@
     position: relative;
     width:30vw;
     border-radius: 40%;
+    border: 2px solid var(--grad40);
 }
 
 .home-content{
@@ -29,18 +31,21 @@
     font-size:4.5rem;
     font-weight:600;
 }
-span{
+h1 span{
     color: var(--gold);
     font-size: 5rem;
 }
 .home-content h3{
     font-size: 4rem;
     font-weight: 500;
+    display: flex;
 }
 .home-content p{
     margin-top:1rem;
     font-size:2rem;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
 }
 
 .socials a{
@@ -71,4 +76,44 @@ a.button{
 }
 a.button:hover{
     box-shadow: 0 0 10px var(--yellow);
+}
+
+.whatAmI span{
+    position: relative;
+    margin-left: 1rem;
+    font-weight: 500;
+    border-bottom: 3px dashed var(--gold);
+    
+}
+.whatAmI span::before{
+    content:"Software Developer";
+    color:var(--gold);
+    animation: words 12s infinite;
+}
+.whatAmI span::after {
+    content: "";
+    position: absolute;
+    inset:-8px;
+    border-right: 3px solid var(--gold);
+    animation: blink 0.9s infinite;
+}
+
+@keyframes words{
+    0%,25%{
+        content:"Frontend Designer";
+    }
+    26%,50%{
+        content:"AI Engineer";
+    }
+    51%,75%{
+        content:"Software Developer";
+    }
+    76%,100%{
+        content:"Deep Learning Engineer";
+    }
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
 }
