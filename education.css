@@ -1,5 +1,6 @@
 :root{
     --clr1: white;
+    --clr2: grey;
     --gold: #ffcc00;
     --yellow: #ffeb3b;
     --grad0: black;
@@ -44,7 +45,14 @@
 }
 .edu p{
     font-size: 1.5rem;
+    margin-top:0.8rem;
     margin-bottom: 2.5rem;
     color: var(--clr2);
     font-weight: 300;
+}
+.edu b{
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    color: var(--clr2);
+    font-weight: 550;
 }
