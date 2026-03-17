@@ -1,0 +1,35 @@
+:root{
+    --clr1: white;
+    --clr2: grey;
+    --gold: #ffcc00;
+    --yellow: #ffeb3b;
+    --grad0: black;
+    --grad40: #241c00;
+    --grad100: #332a00;
+}
+#main_heading{
+    margin-left: 7%;
+    font-size: 7.4rem;
+    font-weight: 500;
+}
+#main_heading img{
+    width:6rem;
+}
+
+.card{
+    width:100vw;
+    height:100vh;
+    background-color: transparent;
+    color: var(--clr1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
