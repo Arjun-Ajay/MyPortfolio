@@ -3,9 +3,10 @@
     --clr2: grey;
     --gold: #ffcc00;
     --yellow: #ffeb3b;
-    --grad0: black;
-    --grad40: #241c00;
-    --grad100: #332a00;
+    --card1: #1b1401;
+    --card2: #251d00;
+    --card3: #2b2201;
+    --card4: #312600;
 }
 #main_heading{
     margin-left: 7%;
@@ -16,20 +17,194 @@
     width:6rem;
 }
 
+.project-container{
+    margin-top:1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20vh;
+}
+
+#arrow{
+    margin-top: 5rem;
+    padding-left: 15vw;
+}
+
 .card{
-    width:100vw;
-    height:100vh;
-    background-color: transparent;
+    width:80vw;
+    height:90vh;
     color: var(--clr1);
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
-    top:0;
+    top:5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px var(--yellow);
+}
+.card:hover{
+    box-shadow: 0 0 20px var(--yellow);
+}
+.card h2{
+    margin-bottom: 2rem;
+    color: var(--gold);
+    border-bottom:1px solid var(--gold)
+}
+.card h3{
+    margin-top:1.2rem;
+}
+.card ul{
+    margin-top:0.5rem;
+    padding-left:5rem;
+    color: var(--clr2); 
+}
+.card p{
+    margin-top:1rem;
+    color: var(--clr2);
+}
+
+#c1{
+    z-index:1;
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    align-items: flex-start;
+    font-size: 2rem;
+    padding-top:15rem;
+}
+#c2{
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    z-index:2;
+    background: var(--card2);
+    font-size:2rem;
+}
+#c3{
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    font-size:2rem;
+    z-index:3;
+    background: var(--card3);
+}
+#c4{
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    font-size:2rem;
+    Z-index:4;
+    background: var(--card4);
+}
+
+.card a.button{
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    border-radius: 4rem;
+    border-color: var(--gold);
+    background-color: black;
+    letter-spacing: 0.7rem;
+    font-size:1.5rem;
+    font-weight: 500;
+}
+.card a.button:hover{
+    box-shadow: 0 0 10px var(--yellow);
 }
 
 .footer{
+    height: 15vh; 
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--grad100);
+    color: var(--clr1);
+    font-size: 1.2rem;
+    font-weight: 500;
+    z-index: 5;
+}
+.footer a{
+    color: var(--gold);
+    border-bottom: 2px dashed var(--gold);
+}
+
+
+@media (max-width: 900px) {
+    #main_heading {
+        font-size: 3.5rem;
+        margin-left: 0;
+        margin-top: 2rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #main_heading img {
+        width: 3.5rem;
+    }
+
+    .project-container {
+        gap: 10vh;
+    }
+
+    .card {
+        width: 90vw;
+        height: auto;
+        min-height: 75vh;
+        top: 6rem;
+        padding: 2rem 1.5rem; 
+    }
+
+    .card h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+        margin-top: 0.8rem;
+    }
+
+    .card p, .card ul {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .card ul {
+        padding-left: 2.5rem;
+    }
+
+    #c1 {
+        padding-top: 5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    #c1 h1 {
+        font-size: 2rem;
+    }
+
+    #arrow {
+        margin-top: 3rem;
+        padding-left: 0;
+        width: 50px;
+    }
+
+    .card a.button {
+        font-size: 1.1rem;
+        padding: 0.8rem 2rem;
+        margin-top: 1.5rem;
+        align-self: flex-start;
+    }
+
+    .footer {
+        height: auto;
+        padding: 2rem 5%;
+        text-align: center;
+        line-height: 1.5;
+    }
 }

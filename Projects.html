@@ -6,13 +6,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="mainstyles.css">
-    <title>MyPortfolio - Home</title>
+    <title>MyPortfolio - Projects</title>
 </head>
 
 <body>
     <header>
         <B class="logo"><img src="images/Portfolio.png">  MyPortfolio</B>
 
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><img src="images/menu.png" id="MenuImg"></label>
+        
         <ul class="navigation">
             <li><a href="Home.html">Home</a></li>
             <li><a href="Skills.html">Skills</a></li>
@@ -24,15 +27,58 @@
     
     <div id="main_heading"><img src="images/projects.png">Projects</div>
 
-    <div>
-        <div class="card">
-            <p class="text-1">Here are a couple of my projects</p><br>
-            <p class="text-2">Scroll Down to view</p>
+    <div class="project-container">
+        <div class="card" id="c1">
+            <div class="c1-content">
+                <H1>Here are a couple of my projects<H1>
+                <H1>Scroll Down to view ;)</H1>
+                <img id="arrow" src="images/dArrow.png" alt="Down arrow">
+            </div>
         </div>
-        <div class="card">Prokjet 1</div>
-        <div class="card">Project 2 </div>
-        <div class="card">Project 3</div>
+        <div class="card" id="c2">
+            <h2>AI COURTROOM SIMULATOR</h2>
+            <H3>Tech Stack:</H3>
+            <ul>
+                <li>Python</li>
+                <li>LangChain</li>
+                <li>StreamLit</li>
+            </ul>
+            <h3>Project Overview:</h3>
+            <P>An interactive AI powered courtroom simulation where intelligent agents debate legal cases and give verdicts from an AI Judge with real time fact checking using RAG.</P>
+            <p>Here AI agents take role of Defence Attorney, Prosecutor and Judge.</p>
+            <p>The simulation interface is built with Streamlit and uses LangChain to manage agents powered by Google Gemini(Advocates) and Groq Llama3 (Judge).</p>
+            <a href="https://github.com/Arjun-Ajay/EpochOn_Ctrl-C-V" class="button" target="_blank">REPO LINK</a>
+        </div>
+
+        <div class="card" id="c3">
+            <h2>DISCORD BOT</h2>
+            <H3>Tech Stack:</H3>
+            <ul>
+                <li>Python</li>
+                <li>Discord API</li>
+                <li>Asynchronous Functions</li>
+            </ul>
+            <h3>Project Overview:</h3>
+            <P>A custom discord bot developed to automate server administration for new members in a community.</P>
+            <p>The application handles dynamic member welcome messages, automatic role assignment upon joining and has an automated moderation system that filters and deletes forbidden keywords to maintain a peaceful environment for all members.  </p>
+            <a href="https://github.com/Arjun-Ajay/amfoss-tasks/tree/main/task-06" class="button" target="_blank">REPO LINK</a>
+        </div>
+
+        <div class="card" id="c4">
+            <h2>JAVA CONTACT MANAGER</h2>
+            <H3>Tech Stack:</H3>
+            <ul>
+                <li>Java</li>
+                <li>Java Swing</li>
+                <li>OOP</li>
+            </ul>
+            <h3>Project Overview:</h3>
+            <P>A robust application I made in my second semester to store, organize, and manage digital contacts.</P>
+            <p>Built entirely in Java, the system uses Object-Oriented Programming principles.</p>
+            <p>The architecture features a base "Contact" class that is dynamically extended into specialized "BusinessContact" and "PersonalContact" classes, displaying implementation of inheritance and polymorphism.</p>
+            <a href="https://github.com/Arjun-Ajay/Java_ContactManager" class="button" target="_blank">REPO LINK</a>
+        </div>
     </div>
-    <div class="footer">Footer</div>
+    <div class="footer"><H2>Want to see my other projects? check out my github profile <a href="https://github.com/Arjun-Ajay" target="_blank">here</a></H2></div>
 </body>
 </html>
