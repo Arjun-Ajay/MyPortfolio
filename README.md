@@ -9,6 +9,7 @@ I chose black and gold as the primary colours for the website with white and gre
 Each page has its own unique css file for ease of viewing and editing. However the styling for the common elements in all the html files, such as the body and header styling, are stored in the "mainstyles.css" file.
 
 The website can be accessed by using this link given below -
+
 Portfolio Website Link: https://arjun-ajay.github.io/MyPortfolio/ 
 # Home
 This page is the main landing page for the website. It contains my profile picture and a formal introduction to who I am and what my interests are.
