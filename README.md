@@ -1,12 +1,14 @@
 # MyPortfolio
 A portfolio website made as part of User Interface and Designs course assignment.
 This website consists of 5 webpages - Home,Skills, Education, Projects and Contact.
+
 All icons used in this website are obtained from icons8.com
 
 I chose black and gold as the primary colours with white and grey being used for texts. The background is a gradient which transitions from black to gold colour in 3 stages. 
 
 Each page has its own unique css file for ease of viewing and editing. However the styling for all common elements in all the html files, such as teh body and header, are stored in the "mainstyles.css" file.
 
+Portfolio Link: https://arjun-ajay.github.io/MyPortfolio/
 # Home
 This page is the main landing page for the website. It contains my profile picture and a formal introduction to who I am and what my interests are.
 
